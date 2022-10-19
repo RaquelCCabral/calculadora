@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src = 'script.js'></script>
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+    <div class = 'calculadora'>
+        <div id = 'tela'>0</div>
+        <div class = 'teclas'>
+            <div class = 'linha'>
+                <button class = 'operadores' onclick = 'limpar()'>AC</button>
+                <button class = 'operadores' onclick = 'digitar("[")'>[</button>
+                <button class = 'operadores' onclick = 'digitar("]")'>]</button>
+                <button class = 'operadores' style="font-size: 18px;" onclick = 'digitar("/")'>÷</button>
+            </div>
+            <div class = 'linha'>
+                <button class = 'numeros' onclick = 'digitar("7")'>7</button>
+                <button class = 'numeros' onclick = 'digitar("8")'>8</button>
+                <button class = 'numeros' onclick = 'digitar("9")'>9</button>
+                <button class = 'operadores' onclick = 'digitar("*")'>x</button>
+            </div>
+            <div class = 'linha'>
+                <button class = 'numeros' onclick = 'digitar("4")'>4</button>
+                <button class = 'numeros' onclick = 'digitar("5")'>5</button>
+                <button class = 'numeros' onclick = 'digitar("6")'>6</button>
+                <button class = 'operadores' style="font-size: 18px;" onclick = 'digitar("-")'>-</button>
+            </div>
+            <div class = 'linha'>
+                <button class = 'numeros' onclick = 'digitar("1")'>1</button>
+                <button class = 'numeros' onclick = 'digitar("2")'>2</button>
+                <button class = 'numeros' onclick = 'digitar("3")'>3</button>
+                <button class = 'operadores' style="font-size: 18px;" onclick = 'digitar("+")'>+</button>
+            </div>
+            <div class = 'linha'>
+                <button class = 'operadores' onclick = 'deletar()'>Del</button>
+                <button class = 'numeros' onclick = 'digitar("0")'>0</button>
+                <button class = 'numeros' onclick = 'digitar(".")'>.</button>
+                <button class = 'calcular' onclick = 'calcular()'>=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(rgba(255, 255, 255, 1) 10%, rgba(255, 250, 183, 1) 60%);
+}
+
+#tela{
+    font-size: xx-large;
+}
+
+.calculadora{
+    padding: 3%;
+    width: 15%;
+    height: 300px;
+    margin: 10% auto;
+    border-radius: 5%;
+    background-color: black;
+    color: white;
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.linha{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+button{
+    background-color: black;
+    height: 50px;
+}
+
+.numeros{
+    color: white;
+}
+
+.operadores{
+    color: orange;
+}
+
+.calcular{
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+}
+
